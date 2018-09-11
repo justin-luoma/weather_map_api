@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/weather_map.css">
+    <title>Weather Map</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>Weather Application</h1>
+    </div>
+    <div class="row">
+        <h2 id="cityName"></h2>
+    </div>
+    <h2>Current weather:</h2><br/>
+    <div class="row">
+        <div class="col" id="weatherCurrent">
+
+        </div>
+
+    </div>
+    <h2>Forecast:</h2><br/>
+    <div class="row">
+        <div class="col hidden" id="weather1"></div>
+        <div class="col hidden" id="weather2"></div>
+        <div class="col hidden" id="weather3"></div>
+    </div>
+    <!--<h2>Change location:</h2>-->
+    <!--<label>Latitude-->
+    <!--<input type="text" name="lat" id="lat_tb">-->
+    <!--</label>-->
+    <!--<label>Longitude-->
+    <!--<input type="text" name="long" id="lon_tb">-->
+    <!--</label>-->
+    <!--<button id="location_btn">Update Forecast</button>-->
+    <div id="map"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3eoh5HklD8BAAb2aoa8QdnqjRdSsV2v4&callback=initMap">
+</script>
+<script src="js/weather_map.js"></script>
+</body>
+</html>
